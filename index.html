@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <div class="calculator-box">
+        <div class="history-box" id="historyBox">
+    <h3>History</h3>
+    <ul id="historyList"></ul>
+</div>
+
+    <div class="calculater">
+        <input type="text" placeholder="Ans = 0" id="inputfield">
+    </div>
+    <div>
+        <button class="operators" onclick="clearAll()">𝔸ℂ</button>
+        <button class="operators" onclick="delchar()">𝔻𝕖𝕝</button>
+        <button class="operators" onclick="getvalue('in')">𝕚𝕟</button>
+        <button class="operators" onclick="getvalue('sin')">𝕤𝕚𝕟</button>
+        <button onclick="getvalue('cos')">𝕔𝕠𝕤</button>
+        <button class="operators" onclick="getvalue('tan')">𝕥𝕒𝕟</button>
+        <button class="operators" onclick="sqrt()">√</button>
+        <button class="operators" onclick="getvalue('.')">.</button>
+
+
+    </div>
+
+
+     <div>
+        <button onclick="getvalue('9')">𝟡</button>
+        <button onclick="getvalue('8')">𝟠</button>
+        <button onclick="getvalue('7')">𝟟</button>
+        <button class="operators" onclick="getvalue('/')">/</button>
+    </div>
+
+
+
+
+
+
+    <div>
+        <button onclick="getvalue('6')">𝟞</button>
+        <button onclick="getvalue('5')">𝟝</button>
+        <button onclick="getvalue('4')">𝟜</button>
+        <button class="operators" onclick="getvalue('%')">%</button>
+        
+    </div>
+
+
+
+
+
+    <div>
+        <button onclick="getvalue('3')">𝟛</button>
+        <button onclick="getvalue('2')">𝟚</button>
+        <button onclick="getvalue('1')">𝟙</button>
+        <button class="operators" onclick="getvalue('+')">+</button>
+        <button onclick="getvalue('00')">𝟘𝟘</button>
+        <button onclick="getvalue('0')">𝟘</button>
+        <button class="operators" onclick="getvalue('-')">-</button>
+        <button class="operators" onclick="getvalue('*')">𝕏</button>
+    </div>
+
+
+
+
+    <div>
+  
+        
+        <button class="equal" onclick="equal()">=</button>
+    </div>
+    
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
